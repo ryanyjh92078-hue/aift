@@ -18,7 +18,7 @@ const server = http.createServer(async (req, res) => {
     await client.connect();
     
     // '홍길동'이라는 이름을 가진 레코드를 조회하는 쿼리
-    const query = "SELECT name FROM test WHERE name = '홍길동' LIMIT 1";
+    const query = "SELECT name FROM test WHERE name = '최진호' LIMIT 1";
     const result = await client.query(query);
 
     if (result.rows.length > 0) {
